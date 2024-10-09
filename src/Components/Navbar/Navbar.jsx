@@ -30,7 +30,7 @@ const Navbar = ({setShowLogin}) => {
   return (
     <div className='navbar'>
       <div className='nav-logo'>
-        <img src={mainlogo} alt=''/>
+       <Link to='/'> <img src={mainlogo} alt=''/></Link>
       </div>
       <img className='nav-dropdown' onClick={dropdown_toggle} src={navdropdown} alt=''/>
       <ul ref={menuRef} className='nav-menu'>
