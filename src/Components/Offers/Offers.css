@@ -1,0 +1,144 @@
+/* Offers.css */
+
+.offers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 80px auto;
+    gap: 20px;
+    flex-wrap: wrap;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .offer-left {
+    flex: 1;
+    max-width: 500px;
+    animation: slideInLeft 1s ease-in-out;
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .offer-left h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: #333;
+    margin: 0;
+    transition: color 0.3s;
+  }
+  
+  .offer-left h1:hover {
+    color: #000;
+  }
+  
+  .offer-left p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #555;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+ 
+  
+  .offer-left button {
+    width: auto;
+   margin-top: -1px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .offer-left button:hover {
+    background-color: #333;
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .offer-right {
+    
+    flex: 1;
+    text-align: center;
+    animation: slideInRight 1s ease-in-out;
+  }
+
+  
+  
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .offer-right img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s, filter 0.3s;
+  }
+  
+  .offer-right img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+  
+  /* Responsive styles */
+  
+ 
+  
+  @media (max-width: 768px) {
+    .offers {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .offer-left,
+    .offer-right {
+      max-width: 100%;
+    }
+  
+    .offer-left h1 {
+      font-size: 2rem;
+    }
+  
+    .offer-left p {
+      font-size: 1rem;
+    }
+  
+    .offer-left button {
+      font-size: 0.9rem;
+    }
+  
+    .offer-right {
+      margin-top: 20px;
+    }
+  }
+  

@@ -1,0 +1,142 @@
+/* Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200..700&display=swap');
+/* General Footer Styles */
+.footer {
+    margin-top: 80px;
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-main {
+    font-family: "Arvo", serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-logo h4 {
+    
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  color: rgba(255, 75, 43, 0.6);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-links li:hover {
+    color: #f39c12;
+}
+
+.footer-social-icon {
+    margin-top: 15px;
+}
+
+.footer-icons-container a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.footer-icons-container a:hover {
+    color: #f39c12;
+    transform: scale(1.2);
+}
+
+/* Contact Section */
+.footer-contact {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-contact h4 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    color: rgba(255, 75, 43, 0.6);
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-customer-service h4{
+margin-bottom: 15px;
+font-size: 1.4rem;
+color: rgba(255, 75, 43, 0.6);
+}
+
+.footer-customer-service li{
+  margin: 5px 0;
+  list-style-type: none;
+  
+
+}
+
+/* Copyright Section */
+.footer-copyright {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-main h4{
+        font-size: 1.3rem;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .footer-contact {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo p {
+        font-size: 1.5em;
+    }
+
+    .footer-links {
+
+        gap: 10px;
+    }
+
+    .footer-icons-container a {
+        margin-right: 10px;
+        font-size: 1.5em;
+    }
+}
