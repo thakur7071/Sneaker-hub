@@ -16,5 +16,4 @@ const Offers = () => {
     </div>
   );
 };
-
 export default Offers;

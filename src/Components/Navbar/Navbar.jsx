@@ -18,8 +18,6 @@ const Navbar = ({setShowLogin}) => {
 });
 
 
-
-
     const [menu,setMenu] = useState("")
     const menuRef = useRef();
 
@@ -39,7 +37,7 @@ const Navbar = ({setShowLogin}) => {
         <li onClick={()=>{setMenu("womens")}}><Link style={{textDecoration: 'none'}} to='/womens'>Womens</Link>{menu==="womens"?<hr/>:<></>}</li>
         <li onClick={()=>{setMenu("kids")}}><Link style={{textDecoration: 'none'}} to='/kids'>Kids</Link>{menu==="kids"?<hr/>:<></>}</li>
       </ul>
-      <div className="nav-login-cart">
+      <div  className="nav-login-cart">
        <img className='loginicon' onClick={()=>setShowLogin(true)} src={loginicon} alt='loginicon'/>
               <Link to='/cart'> <img src={cart_icon} alt=''/></Link>
       </div>
