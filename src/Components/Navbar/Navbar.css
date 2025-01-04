@@ -158,7 +158,8 @@
     }
 
     .nav-login-cart img {
-        margin-right: 20px;
+        margin-right: 15px;
+        width: 38px;
     }
 
     .nav-cart-count{
