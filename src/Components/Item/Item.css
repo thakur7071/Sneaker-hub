@@ -1,6 +1,6 @@
 .item {
-    width: 300px;
-    padding: 20px;
+    width: 250px;
+    padding: 10px;
     position: relative;
     border-radius: 16px; /* Increased radius for smoother edges */
     background: #f9fafb;
@@ -18,7 +18,6 @@
 .item:hover {
     transform: translateY(-8px) rotateX(5deg) rotateY(3deg); /* Slight 3D rotation on hover */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    background: #b2ceea; /* Slight background color change */
 }
 
 .item img {

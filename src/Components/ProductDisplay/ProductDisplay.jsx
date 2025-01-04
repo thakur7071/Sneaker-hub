@@ -33,13 +33,7 @@ const ProductDisplay = (props) => {
         <div className="productdisplay-img">
           <img className='productdisplay-main-img' src={product.image} alt='' />
         </div>
-        <div className="productdisplay-img-list">
-          {/* Add a simple image carousel or slider here */}
-          <img src={product.image} alt='' />
-          <img src={product.image} alt='' />
-          <img src={product.image} alt='' />
-          <img src={product.image} alt='' />
-        </div>
+       
       </div>
 
       <div className="productdisplay-right">

@@ -14,6 +14,8 @@ import p15_img from "./shoes-25.png";
 
 import p1_img from "./shoes-3.png";
 import p10_img from "./shoes17.webp";
+import p20_img from "./shoes-30.png";
+import p21_img from "./shoes-31.png";
 
 let related = [
      {
@@ -109,6 +111,23 @@ let related = [
           new_price: 85.0,
           old_price: 120.5,
         },
+          {
+            id: 24,
+            name: "Nike Air Jordan",
+            category: "kid",
+            image: p20_img,
+            new_price: 85.0,
+            old_price: 120.5,
+          },
+        
+          {
+            id: 25,
+            name: "Nike Air Jordan",
+            category: "kid",
+            image: p21_img,
+            new_price: 85.0,
+            old_price: 120.5,
+          },
 
 ];
 
