@@ -85,8 +85,22 @@
     transition: background 0.3s;
 }
 
-.nav-login-cart img {
-    width: 35px;
+
+
+
+.nav-cart-count{
+    position: absolute;
+   width: 22px;
+   height: 22px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  margin-top: -35px;
+  margin-left: -55px;
+   border-radius: 11px;
+   font-size: 14px;
+   background: red;
+   color: white;
 }
 
 /* Responsive Styles */
@@ -146,6 +160,11 @@
     .nav-login-cart img {
         margin-right: 20px;
     }
+
+    .nav-cart-count{
+        margin-right: 20px;
+    }
+   
 }
 
 @media screen and (max-width: 480px) {
@@ -165,5 +184,10 @@
     .nav-login-cart img {
         width: 30px;
         margin-left: -35px;
+    }
+
+    .nav-cart-count{
+        margin-right: 35px;
+    
     }
 }
