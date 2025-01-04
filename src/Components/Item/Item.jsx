@@ -4,10 +4,11 @@ import PropTypes from 'prop-types';
 
 const Item = (props) => {
     return (
+        <Link to={`/product/${props.id}`}>
         <div className='item'>
-           <Link to={`/product/${props.id}`}>
+         
                <img src={props.image} alt={props.name} />
-           </Link> 
+         
             <p>{props.name}</p>
             <div className="item-prices">
                 <div className="item-price-new">
@@ -18,6 +19,7 @@ const Item = (props) => {
                 </div>
             </div>
         </div>
+        </Link> 
     );
 };
 
