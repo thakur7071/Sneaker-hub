@@ -185,8 +185,14 @@
     }
 
     .nav-login-cart img {
-        width: 35px;
+        width: 30px;
         margin-left: -10px;
+    }
+
+    .nav-cart-count{
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
     }
 
 }
