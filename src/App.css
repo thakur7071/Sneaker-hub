@@ -1,0 +1,35 @@
+/* App.css */
+
+/* Make the page take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Page container to handle layout */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Content wrapper to push footer to the bottom */
+.content-wrap {
+    flex: 1; /* Takes remaining vertical space */
+}
+
+/* Main content styling */
+.main-content {
+    padding: 20px; /* Add padding if needed */
+    background-color: #f9f9f9; /* Optional background color for content */
+}
+
+/* Footer styling (use your existing Footer.css) */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: "Arvo", serif;
+}

@@ -3,9 +3,13 @@ import './ProductDisplay.css';
 import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png";
 import { useState, useEffect } from 'react';
+import { useContext } from 'react';
+import { ShopContext } from '../../Context/ShopContext';
 
 const ProductDisplay = (props) => {
   const { product } = props;
+
+  const {addToCart}=useContext(ShopContext);
 
   // Scroll to the top of the page when the component mounts
   useEffect(() => {
@@ -66,7 +70,7 @@ const ProductDisplay = (props) => {
           </select>
         </div>
        
-        <button>ADD TO CART</button>
+        <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
       </div>
     </div>
   );

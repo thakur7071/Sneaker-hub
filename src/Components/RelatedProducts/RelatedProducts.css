@@ -48,8 +48,10 @@
     }
   
     .related-item {
-        align-items: center;
-    }
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two items in a row */
+      gap: 10px;
+  }
   }
   
   @media (max-width: 400px) {

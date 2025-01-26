@@ -9,36 +9,17 @@
     margin: 80px auto;
     gap: 20px;
     flex-wrap: wrap;
-    animation: fadeIn 1s ease-in-out;
   }
   
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+
   
   .offer-left {
     flex: 1;
     max-width: 500px;
-    animation: slideInLeft 1s ease-in-out;
+   
   }
   
-  @keyframes slideInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
+
   
   .offer-left h1 {
     font-size: 2.5rem;
@@ -83,21 +64,11 @@
     
     flex: 1;
     text-align: center;
-    animation: slideInRight 1s ease-in-out;
+   
   }
 
   
-  
-  @keyframes slideInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
+
   
   .offer-right img {
     max-width: 100%;

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 32px;
+    padding: 10px 32px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
     position: relative;
@@ -12,10 +12,7 @@
     box-sizing: border-box;
 }
 
-/* Hover Effects */
-.navbar:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
+
 
 /* Logo Styles */
 .nav-logo {
@@ -78,6 +75,8 @@
     align-items: center;
 }
 
+
+
 .nav-login-cart .loginicon {
     width: 85px;
     padding: 10px 30px;
@@ -86,12 +85,16 @@
 }
 
 
+.cart-icon{
+    width:35px;
+}
+
 
 
 .nav-cart-count{
     position: absolute;
-   width: 22px;
-   height: 22px;
+   width: 18px;
+   height: 18px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -138,9 +141,9 @@
         height: 55px;
         width: 100%;
         position: absolute;
-        background-color: white;
+        background-color: rgb(255, 254, 254);
         justify-content: center;
-        top: 90px;
+        top: 85px;
 
     }
 
@@ -154,17 +157,15 @@
 
     .nav-login-cart {
         margin-top: 6px;
+        display: flex;
         align-items: center;
     }
 
     .nav-login-cart img {
-        margin-right: 15px;
         width: 38px;
     }
 
-    .nav-cart-count{
-        margin-right: 20px;
-    }
+    
    
 }
 
@@ -174,6 +175,7 @@
     }
 
     .nav-menu {
+       
         height: 35px;
         font-size: 16px;
     }
@@ -183,12 +185,8 @@
     }
 
     .nav-login-cart img {
-        width: 30px;
-        margin-left: -35px;
+        width: 35px;
+        margin-left: -10px;
     }
 
-    .nav-cart-count{
-        margin-right: 35px;
-    
-    }
 }

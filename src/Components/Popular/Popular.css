@@ -24,6 +24,8 @@
     justify-content: center;
     gap: 10px;
   }
+
+ 
   
   @media (max-width: 900px) {
     .popular{
@@ -34,6 +36,8 @@
     .popular h1 {
         font-size: 6vw;
     }
+    
+  
   }
   
   @media (max-width: 600px) {
@@ -48,7 +52,9 @@
     }
   
     .popular-item {
-        align-items: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two items in a row */
+      gap: 10px;
     }
   }
   
