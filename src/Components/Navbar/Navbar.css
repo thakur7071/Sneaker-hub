@@ -73,19 +73,24 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+   
+    gap: 20px;
+ 
 }
 
 
 
-.nav-login-cart .loginicon {
-    width: 85px;
-    padding: 10px 30px;
+.loginicon {
+
+    width: 35px;
+
     cursor: pointer;
     transition: background 0.3s;
 }
 
 
 .cart-icon{
+
     width:35px;
 }
 
@@ -99,7 +104,7 @@
    justify-content: center;
    align-items: center;
   margin-top: -35px;
-  margin-left: -55px;
+  margin-left: -25px;
    border-radius: 11px;
    font-size: 14px;
    background: red;
@@ -156,14 +161,13 @@
     }
 
     .nav-login-cart {
+        margin-right: 10px;
         margin-top: 6px;
         display: flex;
         align-items: center;
     }
 
-    .nav-login-cart img {
-        width: 38px;
-    }
+   
 
     
    
