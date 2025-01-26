@@ -9,7 +9,7 @@ const ShopCategory = (props) => {
   
   return (
     <div className='shop-category'>
-      <img src={props.banner} alt="Banner" className="shopcategory-banner" /> {/* Added alt text and class for styling */}
+      <img src={props.banner} alt="Banner" className="shopcategory-banner" /> 
       <div className="shopcategory-products">
         {all_product.map((item, i) => {
           if (props.category === item.category) {

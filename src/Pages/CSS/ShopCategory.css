@@ -1,5 +1,5 @@
 .shop-category {
-  width: 100%;
+ 
   padding: 20px;
   box-sizing: border-box;
 }
@@ -8,6 +8,7 @@
   display: block;
   margin: 15px auto;
   width: 82%;
+  height: auto;
 }
 
 .shopcategory-products {

@@ -141,9 +141,9 @@
         height: 55px;
         width: 100%;
         position: absolute;
-      
+        background-color: white;
         justify-content: center;
-        top: 85px;
+        top: 90px;
 
     }
 
@@ -175,7 +175,6 @@
     }
 
     .nav-menu {
-       
         height: 35px;
         font-size: 16px;
     }
@@ -183,16 +182,10 @@
     .nav-dropdown {
         margin-right: 40px;
     }
-
+ 
     .nav-login-cart img {
-        width: 30px;
+        width: 35px;
         margin-left: -10px;
-    }
-
-    .nav-cart-count{
-        width: 15px;
-        height: 15px;
-        font-size: 10px;
     }
 
 }
