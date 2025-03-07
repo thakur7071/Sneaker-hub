@@ -6,36 +6,30 @@ import { Link } from "react-router-dom";
 import loginicon from "../Assets/loginicon.png";
 import navdropdown from "../Assets/navdropdown-icon.png";
 import { ShopContext } from "../../Context/ShopContext";
+
 const Navbar = ({ setShowLogin }) => {
-  document.querySelectorAll(".nav-menu li").forEach((item) => {
-    item.addEventListener("click", () => {
-      // Remove active class from all list items
-      document
-        .querySelectorAll(".nav-menu li")
-        .forEach((el) => el.classList.remove("active"));
-
-      // Add active class to the clicked item
-      item.classList.add("active");
-    });
-  });
-
   const [menu, setMenu] = useState("");
-  const {getTotalCartItems}=useContext(ShopContext);
+  const { getTotalCartItems } = useContext(ShopContext);
   const menuRef = useRef();
+  const dropdownRef = useRef();
 
-  const dropdown_toggle = (e) => {
+  const dropdown_toggle = () => {
     menuRef.current.classList.toggle("nav-menu-visible");
-    e.target.classList.toggle("open");
+    dropdownRef.current.classList.toggle("open");
   };
+
+  const closeMenu = () => {
+    menuRef.current.classList.remove("nav-menu-visible");
+    dropdownRef.current.classList.remove("open"); // Close the dropdown icon
+  };
+
   return (
     <div className="navbar">
       <div className="nav-logo">
-      
-  
-          <img src={mainlogo} alt="" />
-        
+        <img src={mainlogo} alt="" />
       </div>
       <img
+        ref={dropdownRef}
         className="nav-dropdown"
         onClick={dropdown_toggle}
         src={navdropdown}
@@ -45,42 +39,34 @@ const Navbar = ({ setShowLogin }) => {
         <li
           onClick={() => {
             setMenu("home");
+            closeMenu();
           }}
         >
-          <Link  to="/">
-            Home
-          </Link>
-        
+          <Link to="/">Home</Link>
         </li>
         <li
           onClick={() => {
             setMenu("mens");
+            closeMenu();
           }}
         >
-          <Link  to="/mens">
-            Mens
-          </Link>
-       
+          <Link to="/mens">Mens</Link>
         </li>
         <li
           onClick={() => {
             setMenu("womens");
+            closeMenu();
           }}
         >
-          <Link  to="/womens">
-            Womens
-          </Link>
-      
+          <Link to="/womens">Womens</Link>
         </li>
         <li
           onClick={() => {
             setMenu("kids");
+            closeMenu();
           }}
         >
-          <Link  to="/kids">
-            Kids
-          </Link>
-      
+          <Link to="/kids">Kids</Link>
         </li>
       </ul>
       <div className="nav-login-cart">
