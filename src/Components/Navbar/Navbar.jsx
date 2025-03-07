@@ -1,14 +1,14 @@
 import "./Navbar.css";
 import cart_icon from "../Assets/cart_icon.png";
 import mainlogo from "../Assets/mainlogo.jpg";
-import { useContext, useRef, useState } from "react";
+import { useContext, useRef } from "react";
 import { Link } from "react-router-dom";
 import loginicon from "../Assets/loginicon.png";
 import navdropdown from "../Assets/navdropdown-icon.png";
 import { ShopContext } from "../../Context/ShopContext";
+import PropTypes from "prop-types"; // Import PropTypes
 
 const Navbar = ({ setShowLogin }) => {
-  const [menu, setMenu] = useState("");
   const { getTotalCartItems } = useContext(ShopContext);
   const menuRef = useRef();
   const dropdownRef = useRef();
@@ -26,63 +26,48 @@ const Navbar = ({ setShowLogin }) => {
   return (
     <div className="navbar">
       <div className="nav-logo">
-        <img src={mainlogo} alt="" />
+        <img src={mainlogo} alt="Main Logo" />
       </div>
       <img
         ref={dropdownRef}
         className="nav-dropdown"
         onClick={dropdown_toggle}
         src={navdropdown}
-        alt=""
+        alt="Dropdown Icon"
       />
       <ul ref={menuRef} className="nav-menu">
-        <li
-          onClick={() => {
-            setMenu("home");
-            closeMenu();
-          }}
-        >
+        <li onClick={closeMenu}>
           <Link to="/">Home</Link>
         </li>
-        <li
-          onClick={() => {
-            setMenu("mens");
-            closeMenu();
-          }}
-        >
+        <li onClick={closeMenu}>
           <Link to="/mens">Mens</Link>
         </li>
-        <li
-          onClick={() => {
-            setMenu("womens");
-            closeMenu();
-          }}
-        >
+        <li onClick={closeMenu}>
           <Link to="/womens">Womens</Link>
         </li>
-        <li
-          onClick={() => {
-            setMenu("kids");
-            closeMenu();
-          }}
-        >
+        <li onClick={closeMenu}>
           <Link to="/kids">Kids</Link>
         </li>
       </ul>
       <div className="nav-login-cart">
         <Link to="/cart">
-          <img className="cart-icon" src={cart_icon} alt="" />
+          <img className="cart-icon" src={cart_icon} alt="Cart Icon" />
         </Link>
         <img
           className="loginicon"
           onClick={() => setShowLogin(true)}
           src={loginicon}
-          alt="loginicon"
+          alt="Login Icon"
         />
         <div className="nav-cart-count">{getTotalCartItems()}</div>
       </div>
     </div>
   );
+};
+
+// ✅ Add PropTypes validation
+Navbar.propTypes = {
+  setShowLogin: PropTypes.func.isRequired, // Ensure it's a function
 };
 
 export default Navbar;
